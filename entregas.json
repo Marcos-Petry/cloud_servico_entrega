@@ -1,0 +1,102 @@
+[
+  {
+    "id_entrega": "ENTR_001",
+    "codigo_rastreio_publico": "BR000000001XY",
+    "destinatario_nome_abreviado": "Maria S.",
+    "cidade_destino": "Belo Horizonte",
+    "status_atual_entrega": "Em trânsito - Unidade de distribuição local",
+    "previsao_entrega_data": "2025-07-01",
+    "entregador_designado_nome": "Carlos Silva",
+    "tipo_servico": "Expresso"
+  },
+  {
+    "id_entrega": "ENTR_002",
+    "codigo_rastreio_publico": "BR000000002XY",
+    "destinatario_nome_abreviado": "João P.",
+    "cidade_destino": "Salvador",
+    "status_atual_entrega": "Coletado - Aguardando transferência",
+    "previsao_entrega_data": "2025-07-02",
+    "entregador_designado_nome": "Ana Pereira",
+    "tipo_servico": "Padrão"
+  },
+  {
+    "id_entrega": "ENTR_003",
+    "codigo_rastreio_publico": "BR000000003XY",
+    "destinatario_nome_abreviado": "Luana T.",
+    "cidade_destino": "São Paulo",
+    "status_atual_entrega": "Saiu para entrega",
+    "previsao_entrega_data": "2025-07-03",
+    "entregador_designado_nome": "Julio Souza",
+    "tipo_servico": "Expresso"
+  },
+  {
+    "id_entrega": "ENTR_004",
+    "codigo_rastreio_publico": "BR000000004XY",
+    "destinatario_nome_abreviado": "Pedro L.",
+    "cidade_destino": "Rio de Janeiro",
+    "status_atual_entrega": "Aguardando retirada",
+    "previsao_entrega_data": "2025-07-04",
+    "entregador_designado_nome": "Larissa Dias",
+    "tipo_servico": "Padrão"
+  },
+  {
+    "id_entrega": "ENTR_005",
+    "codigo_rastreio_publico": "BR000000005XY",
+    "destinatario_nome_abreviado": "Clara V.",
+    "cidade_destino": "Curitiba",
+    "status_atual_entrega": "Em trânsito - Centro de distribuição",
+    "previsao_entrega_data": "2025-07-05",
+    "entregador_designado_nome": "Eduardo Lima",
+    "tipo_servico": "Expresso"
+  },
+  {
+    "id_entrega": "ENTR_006",
+    "codigo_rastreio_publico": "BR000000006XY",
+    "destinatario_nome_abreviado": "Bruno K.",
+    "cidade_destino": "Fortaleza",
+    "status_atual_entrega": "Coletado - Em rota para o destino",
+    "previsao_entrega_data": "2025-07-06",
+    "entregador_designado_nome": "Fernanda Alves",
+    "tipo_servico": "Padrão"
+  },
+  {
+    "id_entrega": "ENTR_007",
+    "codigo_rastreio_publico": "BR000000007XY",
+    "destinatario_nome_abreviado": "Alice M.",
+    "cidade_destino": "Recife",
+    "status_atual_entrega": "Saiu para entrega",
+    "previsao_entrega_data": "2025-07-07",
+    "entregador_designado_nome": "Marcelo Torres",
+    "tipo_servico": "Expresso"
+  },
+  {
+    "id_entrega": "ENTR_008",
+    "codigo_rastreio_publico": "BR000000008XY",
+    "destinatario_nome_abreviado": "Diego R.",
+    "cidade_destino": "Porto Alegre",
+    "status_atual_entrega": "Aguardando coleta",
+    "previsao_entrega_data": "2025-07-08",
+    "entregador_designado_nome": "Tatiane Gomes",
+    "tipo_servico": "Padrão"
+  },
+  {
+    "id_entrega": "ENTR_009",
+    "codigo_rastreio_publico": "BR000000009XY",
+    "destinatario_nome_abreviado": "Juliana N.",
+    "cidade_destino": "Campinas",
+    "status_atual_entrega": "Em trânsito - Unidade local",
+    "previsao_entrega_data": "2025-07-09",
+    "entregador_designado_nome": "Rafael Martins",
+    "tipo_servico": "Expresso"
+  },
+  {
+    "id_entrega": "ENTR_010",
+    "codigo_rastreio_publico": "BR000000010XY",
+    "destinatario_nome_abreviado": "Gabriel D.",
+    "cidade_destino": "Manaus",
+    "status_atual_entrega": "Entregue",
+    "previsao_entrega_data": "2025-07-10",
+    "entregador_designado_nome": "Renata Souza",
+    "tipo_servico": "Padrão"
+  }
+]
