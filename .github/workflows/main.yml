@@ -2,18 +2,16 @@ name: Continuous Integration - API de Entregas
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"] # Alterado para master
   pull_request:
-    branches: ["main"]
+    branches: ["master"] # Alterado para master
 
 jobs:
-  build-and-test:
-    name: Build and Test
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -21,7 +19,6 @@ jobs:
           php-version: "8.2"
           extensions: zip, json, mbstring
           tools: composer:v2
-          coverage: none
 
       - name: Install dependencies
         run: |
