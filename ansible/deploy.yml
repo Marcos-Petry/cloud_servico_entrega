@@ -1,0 +1,37 @@
+- name: Deploy da API de Entregas
+  hosts: api
+  become: yes
+
+  tasks:
+    - name: Instalar PHP e dependências
+      apt:
+        name:
+          - php
+          - php-cli
+          - unzip
+        update_cache: yes
+
+    - name: Instalar Composer
+      shell: |
+        curl -sS https://getcomposer.org/installer | php
+        mv composer.phar /usr/local/bin/composer
+      args:
+        creates: /usr/local/bin/composer
+
+    - name: Copiar arquivos da API
+      copy:
+        src: ../
+        dest: /home/ubuntu/api/
+        owner: ubuntu
+        group: ubuntu
+        mode: 0755
+
+    - name: Instalar dependências com Composer
+      shell: composer install
+      args:
+        chdir: /home/ubuntu/api/
+
+    - name: Iniciar servidor PHP embutido
+      shell: php -S 0.0.0.0:8000 -t /home/ubuntu/api/
+      async: 300
+      poll: 0
