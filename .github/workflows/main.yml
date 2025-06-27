@@ -2,9 +2,9 @@ name: Continuous Integration - API de Entregas
 
 on:
   push:
-    branches: ["master"] # Alterado para master
+    branches: ["master"]
   pull_request:
-    branches: ["master"] # Alterado para master
+    branches: ["master"]
 
 jobs:
   test:
@@ -28,8 +28,16 @@ jobs:
           fi
 
       - name: Start PHP server
-        run: php -S localhost:8000 -t . > /dev/null 2>&1 &
-        background: true
+        run: |
+          php -S localhost:8000 -t . > /dev/null 2>&1 &
+          echo $! > php-server.pid
+          sleep 5
 
       - name: Run tests
         run: ./vendor/bin/phpunit tests/
+
+      - name: Stop PHP server
+        run: |
+          kill $(cat php-server.pid)
+          rm php-server.pid
+        if: always()
